@@ -7,7 +7,7 @@ var port = 3000;
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost:27017/portafolio',
+mongoose.connect('mongodb://localhost:27017/examen',
 {
     useNewUrlParser: true,
     useUnifiedTopology: true
