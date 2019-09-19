@@ -11,4 +11,13 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(bodyParser.json());
 
 
+//ruta para test en postman
+
+app.get('/', (req, res)=>{
+    res.status(200).send(
+        "<h1>Petticion exitosa</h1>"
+    );
+});
+
+
 module.exports = app;
