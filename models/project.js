@@ -3,10 +3,9 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var ProjectSchema = Schema({
+const UserSchema = Schema({
     nombre : String,
     apellido: String
 });
 
-//mongoose se ancarga de igual Project -> projects(portafolio de mongo)
-module.exports = mongoose.model('User', ProjectSchema);
+module.exports = mongoose.model('User', UserSchema);
